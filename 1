@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
+int main() {
+	start:
+	printf("Enter two fucking numbers you little sack of shit. Do I seriously have to tell you what to fucking do?\n");
+	int num1, num2;
+	cin>>num1>>num2;
+	if (num1 >= num2 || num2 <= 2) {
+		printf("There's no fucking pairs of prime numbers you idiot, FUCK OFF YOU DUMBFUCK  \n\n ---------------- \n\n"); goto start;
+	}
+	int i,j,k,l;
+	for (i=num1; i <= num2; i++) {
+		bool prime = true;
+		bool prime2 = true;
+		l = i+2;
+		for (j=2; j*j<=i; j++) {
+			if (!(i%j)) {
+				prime = false;
+			}
+		}
+		if (prime == true) {
+		for (k=2; k*k<=l; j++) {
+			if (!(l%k)) {
+				prime2= false;
+			}
+		}
+		}
+		if (prime == true & prime2 == true) {
+			cout << i << "     " << l << "\n" << endl;
+		}
+		
+		
+	}
+	
+}
